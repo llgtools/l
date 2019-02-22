@@ -1,0 +1,30 @@
+{
+  "name": "@llgtools/l",
+  "version": "0.0.2",
+  "description": "llg's tools",
+  "main": "dist/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src -d dist/ --extensions \".ts, .js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llgtools/l.git"
+  },
+  "author": "llg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/llgtools/l/issues"
+  },
+  "homepage": "https://github.com/llgtools/l#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-typescript": "^7.3.3",
+    "rollup": "^1.2.2",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
