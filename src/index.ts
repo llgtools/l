@@ -1,1 +1,2 @@
-export {default as clone } from './object/clone'
+export * from './object'
+export * from './lib'
