@@ -26,12 +26,13 @@ export function cancelRequestTimeout(timeoutId: TimeoutId) {
 }
 
 export function requestInterval(cb: Function, delay: number) {
-  const start = now();
-  let timeoutId: TimeoutId = { id: requestAnimationFrame(tick) };
+  let start = now();
+  const timeoutId: TimeoutId = { id: requestAnimationFrame(tick) };
 
   function tick() {
     if (now() - start >= delay) {
       cb.call(null);
+      start = now();
       timeoutId.id = requestAnimationFrame(tick);
     } else {
       timeoutId.id = requestAnimationFrame(tick);
