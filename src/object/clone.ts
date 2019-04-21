@@ -1,7 +1,7 @@
 import cl from 'lodash/clone';
 
 function clone(val: any) {
-  return cl(val)
+  return cl(val);
 }
 
-export default clone
+export default clone;
